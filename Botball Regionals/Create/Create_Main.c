@@ -25,10 +25,12 @@ int main()
 {
 	start_function(light_start_sensor);
 	
-	create_move_forward(100, 100, 300);
+	create_move(-100, -100, 300);
 	
 	create_stop();
+	msleep(1000);
 	
+	create_move(-100, 100, 300);
 	
 	//set_servo_position(main_arm_servo, main_arm_mid); //move arm to a higher position than cubes
 	//msleep(100);
